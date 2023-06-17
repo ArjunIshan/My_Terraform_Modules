@@ -18,6 +18,11 @@ variable "igw_TagName" {
   
 }
 
+variable "instance_tenancy" {
+  default = "Default"
+  
+}
+
 variable "subnet_cidr" {
   default = "192.168.10.0/24"
 

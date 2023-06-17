@@ -1,7 +1,7 @@
 #VPC Creation
 resource "aws_vpc" "myvpc" {
   cidr_block       = var.vpc_cidr
-  instance_tenancy = "default"
+  instance_tenancy = var.instance_tenancy
 
   tags = {
     Name = var.vpc_tagName
